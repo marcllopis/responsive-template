@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+    <!--
+        header = parent
+        header-img header-text = child
+        here is an article explaining parent and child relationship
+        https://css-tricks.com/absolute-positioning-inside-relative-positioning/
+    -->
+    <header class="header">
+        <img class="header-img" alt="background landscape"  src="./images/header.jpg" />
+        <p class="header-text">Welcome To World Travel</p>
+    </header>
+
+    <!-- BOX CONTAINER SECTION -->
+    <!--
+        box-container is the parent div to each individual box element.
+        It is responsible for using flexbox on the child elements being each box
+    -->
+
+    <section class="box-container">
+
+        <div class="box">
+            <div class='img-div'>
+                <img class="box-img" alt="1st destination trip" src="images/box-1-img.jpg" />
+            </div>
+            <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sunt rerum commodi minus quaerat! Delectus numquam at quisquam vitae, iste consequatur corrupti. Asperiores quia fuga eligendi quasi repudiandae ad sed?</p>
+        </div>
+
+        <div class="box">
+            <div class='img-div'>
+                <img class="box-img" alt="2nd destination trip" src="images/box-2-img.jpg" />
+            </div>
+            <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sunt rerum commodi minus quaerat! Delectus numquam at quisquam vitae, iste consequatur corrupti. Asperiores quia fuga eligendi quasi repudiandae ad sed?</p>
+        </div>
+
+        <div class="box">
+            <div class='img-div'>
+                <img class="box-img" alt="3rd destination trip" src="images/box-3-img.jpg" />
+            </div>
+            <p class="box-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sunt rerum commodi minus quaerat! Delectus numquam at quisquam vitae, iste consequatur corrupti. Asperiores quia fuga eligendi quasi repudiandae ad sed?</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <!-- Footer is using flexbox with the property space-between in order create the space between the footer-text and footer-logo -->
+    <footer class="footer">
+        <img class="footer-logo" src="./images/logo.svg" />
+        <p class="footer-text">Copyright 2020, All rights Reserved.</p>
+    </footer>
+</body>
+</html>
